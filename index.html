@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="img/icon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/events.css">
+    <link rel="stylesheet" href="css/team.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/main.js" defer></script>
+    <script src="js/light mode.js" defer></script>
+    <script src="js/gallery picture.js" defer></script>
+    <title>TLP | WEB Development Company</title>
+</head>
+<body>
+<!--------------------- Animation --------------------->
+    <div class="anime">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+<!----------------------- Menu ------------------->
+    <nav>
+        <!----------------------- Logo ---------------------------->
+        <a class="logo" href="#home"><img class="img" src="img/TLP logo.png"></a>
+        <i class="fas fa-bars barButton" id="barButton"></i>
+        <i class="fas fa-times closeButton" id="closeButton"></i>
+        <div id="navBar">
+            <a href="#home" id="icons"><abbr title="Home"><i class="fas fa-home"></i></abbr></a>
+            <a href="#gallery" id="icons"><abbr title="Gallery"><i class="fas fa-image"></i></abbr></a>
+            <a href="#events" id="icons"><abbr title="Events"><i class="fas fa-calendar-check"></i></abbr></a>
+            <a href="#team" id="icons"><abbr title="Team"><i class="fas fa-users"></i></abbr></a>
+            <a href="#about" id="icons"><abbr title="About Us"><i class="fas fa-info-circle"></i></abbr></a>
+            <div class="languages" id="languages2">
+                <a href="indexArm.html"><img src="img/ARM flag.png"> Armenian</a>
+                <a href="index.html"><img src="img/US flag.png"> English</a>
+            </div>
+        </div>
+    </nav>
+<!----------------------- Settings ----------------->
+    <header>
+       <div class="iconss">
+        <!-- <i class="fas fa-sun icons" id="light"></i>
+        <i class="fas fa-moon icons" id="dark"></i><br> -->
+        <abbr title="Languages"><i class="fas fa-globe iconsa" id="lang"></i></abbr>
+       </div>
+        <div class="languages" id="languages">
+            <a href="indexArm.html"><img src="img/ARM flag.png"> Armenian</a>
+            <a href="index.html"><img src="img/US flag.png"> English</a>
+        </div>
+    </header>
+<!----------------------- Home ------------------->
+    <div id="home">
+        <img src="img/homePicture.jpg">
+        <div>
+            <h1>Welcome to TLP</h1>
+            <p>IT Company</p>
+            <h1>We create websites</h1>
+        </div>
+    </div>
+<!----------------------- Services ------------------->
+<div class="services">
+    <div class="black">
+        <h2>What service do we provide?</h2><hr>
+        <div class="object">
+            <i class="fas fa-hand-holding-usd"></i>
+            <h3>Cheap prices</h3>
+        </div>
+        <div class="object">
+            <i class="fas fa-handshake"></i>
+            <h3>Free consultation</h3>
+        </div>
+        <div class="object">
+            <i class="fas fa-video"></i>
+            <h3>Free videocourses</h3>
+        </div>
+        <div class="object">
+            <i class="fas fa-file-contract"></i>
+            <h3>6 months website controlling</h3>
+        </div>
+    </div>
+</div>
+<!----------------------- Gallery ------------------------>
+    <div class="gallery" id="gallery">
+        <h1>Gallery</h1><hr>
+        <p>Our Gallery</p><br><br>
+        <!--------------Div for opened pictures------------------>
+        <div class="openPicture">
+            <div class="fa fa-close" id="CloseButton"></div>
+            <div id="GalleryImage"></div>
+        </div>
+        <!--Pictures-->
+       <div class="slideGallery">
+        <!--Picture 1-->
+        <div class="object object1">
+            <div class="img img1">
+                <div class="hover" onclick="OpenPic1()">
+                    <div class="fa fa-search-plus"></div>
+                </div>
+            </div>
+            <h1>Image not found</h1>
+            <hr>
+            <p>Please reload page</p>
+        </div>
+        <!--Picture 2-->
+        <div class="object object1">
+            <div class="img img2">
+                <div class="hover" onclick="OpenPic1()">
+                    <div class="fa fa-search-plus"></div>
+                </div>
+            </div>
+            <h1>Browsers</h1>
+            <hr>
+            <p>Top 3 borwsers <a target="_blank" href="https://www.facebook.com/TechnologyLearningPlanet/posts/297346749124220">here</a></p>
+        </div>
+        <!--Picture 3-->
+        <div class="object object1">
+            <div class="img img3">
+                <div class="hover" onclick="OpenPic1()">
+                    <div class="fa fa-search-plus"></div>
+                </div>
+            </div>
+            <h1>Wood Works</h1>
+            <hr>
+            <p>Wood works <a target="_blank" href="https://www.facebook.com/TechnologyLearningPlanet/posts/270510818474480">here</a></p>
+        </div>
+        <!--Picture 4-->
+        <div class="object object1">
+            <div class="img img4">
+                <div class="hover" onclick="OpenPic1()">
+                    <div class="fa fa-search-plus"></div>
+                </div>
+            </div>
+            <h1>Website</h1>
+            <hr>
+            <p>How we make websites?</p>
+        </div>
+        <!--Picture 5-->
+        <div class="object object1">
+            <div class="img img5">
+                <div class="hover" onclick="OpenPic1()">
+                    <div class="fa fa-search-plus"></div>
+                </div>
+            </div>
+            <h1>About IT</h1>
+            <hr>
+            <p>Learn about IT <a target="_blank" href="https://www.facebook.com/TechnologyLearningPlanet/posts/240261921499370">here</a></p>
+        </div>
+        <!--Picture 6-->
+        <div class="object">
+            <div class="img img6">
+                <div class="hover" onclick="OpenPic1()">
+                    <div class="fa fa-search-plus"></div>
+                </div>
+            </div>
+            <h1>Our first Event</h1>
+            <hr>
+            <p>IT in Vardenis with Rouben Meschian <a target="_blank" href="https://www.facebook.com/TechnologyLearningPlanet/posts/293717722820456">here</a></p>
+        </div>
+        <!--Picture 7-->
+        <div class="object">
+            <div class="img img7">
+                <div class="hover" onclick="OpenPic1()">
+                    <div class="fa fa-search-plus"></div>
+                </div>
+            </div>
+            <h1>Just Background</h1>
+            <hr>
+            <p></p>
+        </div>
+        <!--Picture 8-->
+        <div class="object">
+            <div class="img img8">
+                <div class="hover" onclick="OpenPic1()">
+                    <div class="fa fa-search-plus"></div>
+                </div>
+            </div>
+            <h1>Just Background 2</h1>
+            <hr>
+            <p></p>
+        </div>
+    </div>
+    </div>
+<!----------------------- Services ------------------->
+    <div class="services">
+        <div class="black">
+            <h2>What can we do?</h2><hr>
+            <div class="object">
+                <i class="far fa-file-video"></i>
+                <h3>Video Editing</h3>
+            </div>
+            <div class="object">
+                <i class="fas fa-drafting-compass"></i>
+                <h3>Work with graphics</h3>
+            </div>
+            <div class="object">
+                <i class="far fa-object-group"></i>
+                <h3>Making Websites</h3>
+            </div>
+            <div class="object">
+                <i class="fas fa-book-reader"></i>
+                <h3>IT Courses</h3>
+            </div>
+        </div>
+    </div>
+<!----------------------- Events ------------------------>
+    <div class="events" id="events">
+        <h1>Events</h1><hr>
+        <p>We create IT events / Lessons</p><br><br>
+        <!--Event 1-->
+        <div class="evObject">
+            <img src="./img/Rouben's event.jpg">
+            <div class="content">
+                <h2>IT Vardenis with Rouben Meschian</h2>
+                <hr>
+                <p>
+                    💛 During the event you will know: <br>
+                    ✔ The guarantee of Rouben Meschyan's success,<br>
+                    ✔ way of life.<br>
+                    You will get acquainted with: <br>
+                    ✔ IT branches,<br>
+                    ✔ IT secrets.
+                </p>
+                <div class="view">
+                    <a target="_blank" href="https://www.facebook.com/events/478597186944095/?acontext=%7B%22event_action_history%22%3A[%7B%22surface%22%3A%22page%22%7D]%7D"><i class="fas fa-eye"></i></a>
+                </div>
+            </div>
+        </div>
+        <!--Event 2-->
+        <div class="evObject">
+            <img src="./img/Vegas Lesson.jpg">
+            <div class="content">
+                <h2>Vegas Pro 17 Free Lesson</h2>
+                <hr>
+                <p>
+                    💛 During the event you will know: <br>
+                    ✔ The guarantee of Mels Karapetyan's success,<br>
+                    ✔ way of life.<br>
+                    You will get acquainted with: <br>
+                    ✔ Vegas Pro 17 program,<br>
+                    ✔ Video Editing.
+                </p>
+                <div class="view">
+                    <a target="_blank" href="https://www.facebook.com/events/1532667027107766/?acontext=%7B%22event_action_history%22%3A[%7B%22surface%22%3A%22page%22%7D]%7D"><i class="fas fa-eye"></i></a>
+                </div>
+            </div>
+        </div>
+        <!--Event 2-->
+        <div class="evObject">
+            <img src="./img/Web Lesson.jpg">
+            <div class="content">
+                <h2>WEB Programming Free Lesson</h2>
+                <hr>
+                <p>
+                    💛 During the event you will know: <br>
+                    ✔ The guarantee of Gug Barseghyan's success,<br>
+                    ✔ way of life.<br>
+                    You will get acquainted with: <br>
+                    ✔ HTML/CSS,<br>
+                    ✔ WEBsite making.
+                </p>
+                <div class="view">
+                    <a target="_blank" href="https://www.facebook.com/events/207421171410417/?acontext=%7B%22event_action_history%22%3A[%7B%22surface%22%3A%22page%22%7D]%7D"><i class="fas fa-eye"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!----------------------- Social ------------------->
+    <div class="services">
+        <div class="black">
+            <h2>We in the social</h2><hr>
+            <div class="object">
+                <i class="fab fa-facebook"></i>
+                <a target="_blank" href="https://www.facebook.com/TechnologyLearningPlanet"><h3>Our Facebook</h3></a>
+            </div>
+            <div class="object">
+                <i class="fab fa-instagram"></i>
+                <a target="_blank" href="https://www.instagram.com/tlp.it"><h3>Our Instagram</h3></a>
+            </div>
+            <div class="object">
+                <i class="fab fa-youtube"></i>
+                <a target="_blank" href="https://www.youtube.com/TLPchannel"><h3>Our Youtube</h3></a>
+            </div>
+            <div class="object">
+                <i class="fab fa-tiktok"></i>
+                <a target="_blank" href="https://tlp.it"><h3>Our TikTok</h3></a>
+            </div>
+        </div>
+    </div>
+    <!----------------------- Team ------------------->
+    <div class="team" id="team">
+        <h1>Our Team members</h1>
+        <hr><br><br><br>
+        <!--Gug Barseghyan -->
+        <div class="teamMember">
+            <div class="image teamPic1">
+                <div class="hover">
+                    <div class="socials">
+                        <a target="_blank" href="https://www.facebook.com/gugbarseghian"><i class="fab fa-facebook"></i></a>
+                        <a target="_blank"  href="https://www.instagram.com/gugbarseghyan"><i class="fab fa-instagram"></i></a>
+                        <a  target="_blank" href="https://www.youtube.com/c/gugbarseghyan"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <h1>Gug Barseghyan</h1>
+            <hr>
+            <p>Founder, Chairman, Graphic Designer, Web Programmer</p>
+        </div>
+        <!-- Mels Karapetyan-->
+        <div class="teamMember">
+            <div class="image teamPic2">
+                <div class="hover">
+                    <div class="socials">
+                        <a target="_blank"  href="https://www.facebook.com/mels.karapetyan.5"><i class="fab fa-facebook"></i></a>
+                        <a target="_blank"  href="https://www.instagram.com/karapetyanmels/"><i class="fab fa-instagram"></i></a>
+                        <a target="_blank"  href="https://www.youtube.com/channel/UCbc8_0B7rosa5RPXkZjMm_g"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <h1>Mels Karapetyan</h1>
+            <hr>
+            <p>Founder, Video Creator, Web Programmer</p>
+        </div>
+        <!-- Mihran Abrahamyan -->
+        <div class="teamMember">
+            <div class="image teamPic3">
+                <div class="hover">
+                    <div class="socials">
+                        <a  target="_blank" href="https://www.facebook.com/mir.ayan.5855"><i class="fab fa-facebook"></i></a>
+                        <a target="_blank"  href="https://www.instagram.com/__abrahamyann/"><i class="fab fa-instagram"></i></a>
+                        <!-- <a target="_blank"  href="#"><i class="fab fa-youtube"></i></a> -->
+                    </div>
+                </div>
+            </div>
+            <h1>Mihran Abrahamyan</h1>
+            <hr>
+            <p>Founder, Web Programmer</p>
+        </div>
+        <!-- Venera Nesesyan -->
+        <div class="teamMember">
+            <div class="image teamPic4">
+                <div class="hover">
+                    <div class="socials">
+                        <a target="_blank"  href="#"><i class="fab fa-facebook"></i></a>
+                        <a  target="_blank" href="#"><i class="fab fa-instagram"></i></a>
+                        <a  target="_blank" href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <h1>Venera Nesesyan</h1>
+            <hr>
+            <p>Video Creator, Content Writer, UI Designer, Web Programmer</p>
+        </div>
+        <!-- Astgh Sahakyan -->
+        <div class="teamMember">
+            <div class="image teamPic5">
+                <div class="hover">
+                    <div class="socials">
+                        <a target="_blank"  href="https://www.facebook.com/astx.sahakyan.77"><i class="fab fa-facebook"></i></a>
+                        <a  target="_blank" href="#"><i class="fab fa-instagram"></i></a>
+                        <a  target="_blank" href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <h1>Astgh Sahakyan</h1>
+            <hr>
+            <p>Graphic Designer</p>
+        </div>
+        <!-- Gug Manukyan-->
+        <div class="teamMember">
+            <div class="image teamPic6">
+                <div class="hover">
+                    <div class="socials">
+                        <a target="_blank"  href="#"><i class="fab fa-facebook"></i></a>
+                        <a target="_blank"  href="#"><i class="fab fa-instagram"></i></a>
+                        <a target="_blank"  href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <h1>Gug Manukyan</h1>
+            <hr>
+            <p>Video Creator, Web Programmer</p>
+        </div>
+        <!-- Knarik Madoyan -->
+        <div class="teamMember">
+            <div class="image teamPic7">
+                <div class="hover">
+                    <div class="socials">
+                        <a  target="_blank" href="#"><i class="fab fa-facebook"></i></a>
+                        <a  target="_blank" href="#"><i class="fab fa-instagram"></i></a>
+                        <a  target="_blank" href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <h1>Knarik Madoyan</h1>
+            <hr>
+            <p>UX Designer, Web Programmer</p>
+        </div>
+        <!-- Tatev Karoyan -->
+        <div class="teamMember">
+            <div class="image teamPic8">
+                <div class="hover">
+                    <div class="socials">
+                        <a  target="_blank" href="#"><i class="fab fa-facebook"></i></a>
+                        <a  target="_blank" href="#"><i class="fab fa-instagram"></i></a>
+                        <a  target="_blank" href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <h1>Tatev Karoyan</h1>
+            <hr>
+            <p>Content Writer</p>
+        </div>
+        <!-- Anahit Davtyan -->
+        <div class="teamMember">
+            <div class="image teamPic9">
+                <div class="hover">
+                    <div class="socials">
+                        <a target="_blank"  href="#"><i class="fab fa-facebook"></i></a>
+                        <a target="_blank"  href="#"><i class="fab fa-instagram"></i></a>
+                        <a  target="_blank" href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <h1>Anahit Davtyan</h1>
+            <hr>
+            <p>Content Writer</p>
+        </div>
+        <!-- Nona Petrosyan-->
+        <div class="teamMember">
+            <div class="image teamPic10">
+                <div class="hover">
+                    <div class="socials">
+                        <a  target="_blank" href="#"><i class="fab fa-facebook"></i></a>
+                        <a  target="_blank" href="#"><i class="fab fa-instagram"></i></a>
+                        <a  target="_blank" href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <h1>Nona Petrosyan</h1>
+            <hr>
+            <p>Video Creator, Graphic Designer, Content Writer</p>
+        </div>
+    </div>
+    <!----------------------- Co_Workers ------------------->
+    <div class="services">
+        <div class="black">
+            <h2>Our Co-workers</h2><hr>
+            <div class="animation">
+                <a href="#"><img title="Support Armenia Found" src="./img/SAF.png"></a>
+                <a href="#"><img title="Municipality of Vardenis" src="./img/Center of Vardenis.jpg"></a>
+                <a href="#"><img title="Children of regions" src="./img/MEM.jpg"></a>
+                <a href="#"><img title="Mantashov business center" src="./img/Mantashv BC.jpg"></a>
+                <a href="#"><img title="IT's a village" src="./img/IT's a village.jpg"></a>
+            </div>
+        </div>
+    </div>
+<!----------------------- About Us ------------------->
+    <div class="about" id="about">
+        <h1>About Us</h1>
+        <hr>
+        <img src="./img/icon.png">
+        <div class="content">
+            <h1>TLP - Technology Learning Planet</h1>
+            <hr>
+            <p><br>
+                Մեր նպատակն է համայնքերում, գյուղերում զարգացնել ՏՏ ոլորտի մակարդակը, որպեսզի այտեղի մարդիկ նույնպես լինեն տեղեկացված ոլորտից։ Ինչպես նաև պետք է հիշենք այն փաստը՝ որ առանց համայնքների քաղաքները գոյություն չեն ունենա։
+                <br>Մենք տալիս ենք հետևյալ ծառայությունները՝<br><br></p>
+                <ul type="none">
+                    <li>ՎԵԲ կայքերի պատրաստում և 6 ամսյա կառավարում</li>
+                    <li>Փայտյա իրերի պատրաստում</li>
+                    <li>Գրաֆիկ դիզայնի ծառայություններ</li>
+                    <li>ՏՏ կրթություն (մանրամասները <a href="#">այստեղ</a>)</li>
+                </ul>
+                <br><hr><br><p>
+                Մենք ստեղծվել ենք 2021 թվականի ապրիլ ամսին, սակայն մեր հիմնական գործողությունները սկսել ենք սեպտեմբերի 1-ից։ Այդ օրը սկսվեց մեր առաջին դասընթացը՝ <a href="#">«ՎԵԲ Ծրագրավորում»</a> թեմայով։ Դրան հաջորդեց՝ <a href="#">«Vegas pro 17»</a>-ի դասընթացը հոկտեմբեր ամսին։ Ապա նոյեմբեր ամսին բացեցինք <a href="#">դրամահավաք</a>, որպեսզի աշախտենք արդեն օֆֆլայն ձևաչափով։ Դրամահավաքը ավարտվեց, և մենք բարեբախտաբար հավաքեցինք ուղիղ 1 միլն դրամ, շուրջ 2000 դոլար, որի շնորհիվ գնեցինք գույք։ Իսկ արդեն դրամահավաքի ավարտից հետո մեր գործընկեր <a href="#">SAF (Support Armenia Foud)</a>-ի միջոցով ստացանք 2 հզոր համակարգիչներ և 250, 000 դրամ, որի շնորհիվ գնեցինք նոթբուք։ Արդեն 2021-ի Դեկտեմբեր ամսին ունեինք տարածք, <a href="#">Վարդենիսի Համայնքապետարանի</a> կողմից անվարձահատույց։ Տարածքը գտնվում էր բավական լավ վիճակում։ Այն մինչև օրս ծառայում է մեզ, չնայած իր փոքր չափսերին։ 2022-ի Փետրվար ամսին Վարդենիսում տեղի ունեցավ միջոցառում, որը կազմակերպել էր՝ <a href="#">ՎԵՆ - Վարդենիսի Երիտասարդ Նախաձեռնող</a> ՍԿ նախաձեռնությունը։ Այդ միջոցառման շրջանակներում ներկայացավ նաև TLP-ին, և շատ հրապուրեց հյուրերին, և հենց այդ օրը <a href="#">ՄԵՄ - Մարզերի Երեխաները Մարզերում</a> ՍԿ ՀԿ-ն և <a href="#">Մաթաշով բիզնես ակումբը</a> մեզ նվիրեցին նոր նոթբուք։ Եվ ահա ունեցանք արդեն 4 համակարգիչներ։  Արդեն 2022-ի Մարտ ամսին համագործակցեցինք նաև՝ <a href="#">IT's a village</a> նախաձեռնության հետ, որի շնորհիվ կարողացանք իրացնել մեր <a href="#">արտադրանքը:</a>
+            </p>
+        </div>
+    </div>
+<!----------------------- Footer ------------------->
+    <footer>
+        <div class="black2">
+            <div>
+                <h3>Menu</h3>
+                <a href="#home">Home</a><br>
+                <a href="#gallery">Gallery</a><br>
+                <a href="#events">Events</a><br>
+                <a href="#team">Team</a><br>
+                <a href="#about">About</a><br>
+            </div>
+            <div>
+                <h3>Services</h3>
+                <a href="#">WEB Development</a><br>
+                <a href="#">Graphic Design</a><br>
+                <a href="#">Video Editing</a><br>
+                <a href="#">Courses</a><br>
+            </div>
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1125.3934184084653!2d45.72857673812631!3d40.183696476881686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x403f95e13c1d5669%3A0xed414d0e525d1cb1!2s10%20Roman%20St%2C%20Vardenis%2C%20Armenia!5e0!3m2!1sen!2s!4v1647449733792!5m2!1sen!2s" style="border:0;" allowfullscreen="" loading="lazy" width="300px" height="250px"></iframe>
+            </div>
+        </div>
+    </footer>
+    <div class="WEBend">
+        <p>© 2022 - TLP</p>
+        <div>
+            <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" title="Youtube"><i class="fab fa-youtube"></i></a>
+            <a href="#" title="Tik Tok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" title="Linkedin"><i class="fab fa-linkedin"></i></a>
+            <a href="#" title="twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+</body>
+</html>

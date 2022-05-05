@@ -1,0 +1,127 @@
+/*------------------- Galley -----------------------*/
+.gallery{
+    width: 100%;
+    text-align: center;
+    padding: 40px 0px;
+}
+.slideGallery{
+    padding: 5px 20px;
+    overflow-x: scroll;
+    height: 370px;
+    display: flex;
+    margin: 30px 0px;
+}
+.slideGallery .object{
+    margin: 10px;
+    text-align: center;
+    width: 300px;
+    height: 200px;
+    padding-bottom: 20px;
+    display: inline-block;
+    border-radius: 15px;
+}
+/*Respnosive slide Object ----------------------------------------------------------------------------
+
+    width: 250px;
+    height: 1670px; */
+
+.slideGallery .object .img{
+    background-image: url(../img/Image\ not\ found.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 300px;
+    height:  200px;
+    border-radius: 15px;
+}
+.slideGallery .object .fa-search-plus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    color: black;
+    background-color: #EDDE0C;
+    border-radius: 50%;
+}
+.slideGallery .object .hover{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: black;
+    transition: 0.4s;
+    border-radius: 15px;
+}
+.slideGallery .object .hover:hover{
+    opacity: 0.6;
+}
+.slideGallery .object .img1{
+    background-image: url(../img/Image\ not\ found.png);
+}
+.slideGallery .object .img2{
+    background-image: url(../img/portfolio\ 2.png);
+}
+.slideGallery .object .img3{
+    background-image: url(../img/portfolio\ 3.png);
+}
+.slideGallery .object .img4{
+    background-image: url(../img//homePicture.jpg);
+}
+.slideGallery .object .img5{
+    background-image: url(../img/portfolio\ 1.jpg);
+}
+.slideGallery .object .img6{
+    background-image: url(../img/portfolio\ 4.jpg);
+}
+.slideGallery .object .img7{
+    background-image: url(../img/back\ 1.png);
+}
+.slideGallery .object .img8{
+    background-image: url(../img/TLP\ event\ back.png);
+}
+/*--------------Opened Picture------------------*/
+.openPicture{
+    width: 100%;
+    height: 100%;
+    background-color: #30303090;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding: 50px;
+    display: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.openPicture .fa-close{
+    width: 50px;
+    height: 50px;
+    background-color: #EDDE0C30;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    color: black;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+.openPicture .fa-close:hover{
+    background-color: #EDDE0C;
+}
+.openPicture #GalleryImage{
+    width: 600px;
+    height: 400px;
+    background-image: url(../img/Image\ not\ found.png);
+    margin: auto;
+    border-radius: 15px;
+}
+.openPic1{
+    background-image: url(../img/Image\ not\ found.png);
+}

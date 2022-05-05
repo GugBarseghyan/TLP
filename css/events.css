@@ -1,0 +1,44 @@
+.events{
+    text-align: center;
+    position: relative;
+    padding:50px 0px;
+}
+.evObject{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px 0px;
+}
+.evObject img{
+    border-radius: 10px;
+    width: 500px;
+}
+.evObject .content{
+    text-align: left;
+    padding: 0px 50px;
+}
+.view{
+    padding: 15px;
+    background-color: #EDDE0C;
+    border-radius: 10px;
+    text-align: center;
+}
+.view i{
+    color: black;
+    font-size: 25px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+/* ---------- Responsive -----------------*/
+@media only screen and (max-width: 700px){
+    .evObject img{
+        width: 100%;
+    }
+    .evObject{
+        width: 100%;
+        padding: 10px
+    }
+}
